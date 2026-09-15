@@ -1,0 +1,479 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    color: #151515;
+    line-height: 1.6;
+}
+
+
+.container {
+    width: 92%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: #080808;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #292929;
+}
+
+
+.navbar {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.logo {
+    color: white;
+    font-weight: 900;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+
+.logo span {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #aaa;
+}
+
+
+nav {
+    margin-left: auto;
+    display: flex;
+    gap: 25px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+nav a:hover {
+    color: #aaa;
+}
+
+
+.nav-whatsapp {
+    background: white;
+    color: black;
+    text-decoration: none;
+    padding: 9px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0.75)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+
+.hero-content {
+    padding: 100px 0;
+}
+
+
+.small-title {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #aaa;
+    font-weight: bold;
+}
+
+
+h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.02;
+    max-width: 900px;
+    margin: 20px 0;
+}
+
+
+h1 span {
+    color: #bdbdbd;
+}
+
+
+.hero-description {
+    max-width: 700px;
+    color: #ccc;
+    font-size: 18px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+
+.button {
+    padding: 14px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.whatsapp {
+    background: white;
+    color: black;
+}
+
+
+.telegram {
+    border: 1px solid #777;
+    color: white;
+}
+
+
+.trust {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    color: #bbb;
+    font-size: 13px;
+}
+
+
+/* ================= GENERAL SECTIONS ================= */
+
+.section {
+    padding: 90px 0;
+}
+
+
+.section-title {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #777;
+}
+
+
+h2 {
+    font-size: clamp(32px, 5vw, 50px);
+    line-height: 1.1;
+    margin-top: 10px;
+}
+
+
+.intro {
+    color: #666;
+    max-width: 700px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+
+.about p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* ================= BRANDS ================= */
+
+.dark-section {
+    background: #0c0c0c;
+    color: white;
+}
+
+
+.brands {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 35px;
+}
+
+
+.brands div {
+    padding: 18px 10px;
+    border: 1px solid #292929;
+    text-align: center;
+    font-weight: bold;
+    color: #ddd;
+}
+
+
+/* ================= SERVICES ================= */
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 45px;
+}
+
+
+.service-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+
+.service-image {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #111;
+}
+
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.service-card p {
+    color: #555;
+}
+
+
+.service-card ul {
+    padding-left: 20px;
+    color: #555;
+}
+
+
+.service-card li {
+    margin-bottom: 6px;
+}
+
+
+.supported {
+    font-size: 14px;
+}
+
+
+.service-button {
+    display: inline-block;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    padding: 11px 17px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.service-button:hover {
+    background: #333;
+}
+
+
+/* ================= CTA ================= */
+
+.cta {
+    background: #111;
+    color: white;
+    padding: 70px 0;
+}
+
+
+.cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    background: white;
+}
+
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.contact-box {
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #111;
+}
+
+
+.contact-box span {
+    display: block;
+    color: #777;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.contact-box strong {
+    display: block;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #070707;
+    color: #aaa;
+    padding: 50px 0 20px;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.footer-content h3 {
+    color: white;
+}
+
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.copyright {
+    width: 92%;
+    max-width: 1150px;
+    margin: 35px auto 0;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        display: none;
+    }
+
+
+    .nav-whatsapp {
+        margin-left: auto;
+    }
+
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .brands {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+
+    .hero {
+        min-height: 650px;
+    }
+
+}
